@@ -61,3 +61,153 @@ body
 .big-img
     width: 96%
     border-radius: 25px
+
+//Booking page
+.selected-table
+    font-size: 1.25rem
+    padding-bottom: 2%
+
+//Dropdowns
+input[type=date]::-webkit-inner-spin-button
+    -webkit-appearance: none
+    display: none
+input[type=date]::-webkit-calendar-picker-indicator
+    -webkit-appearance: none
+    display: none
+
+.booking-dropdown
+    width: 85%
+    padding: 4% 0
+    background-color: $red
+    color: white
+    margin: 2% 0
+    font-family: Roboto
+    font-size: 1.1rem
+    border: none
+    border-radius: 5px
+    text-align: center
+    &:hover
+        background-color: $red
+        color: white
+    &:focus
+        outline: none
+        box-shadow: none
+    &-menu
+        outline: none
+    &-item:hover
+        background-color: white
+    &-item:active
+        background-color: white
+        color: black
+
+@media(min-width: $small-break)
+    .booking-dropdown
+        font-size: 1.2rem
+
+//Tables display
+.table-display-message
+    padding: 2% 0
+    text-align: center
+    font-size: 1.3rem
+    color: white
+
+.tables-display
+    background-color: $red
+    margin: 10% 2%
+    padding: 3% 5%
+    border-radius: 25px
+
+@media(min-width: $small-break)
+    .tables-display
+        margin: 6% 2.5%
+
+.table-key
+    padding-top: 1%
+    padding-bottom: 4.5%
+    color: white
+
+.available-tables
+    color: white
+    font-size: 1.2rem
+    font-family: Roboto, sans-serif
+
+.table-container
+    margin: 0 1%
+
+.table
+    background-color: rgba(245,246, 250,.4)
+    padding: 15px
+    border-radius: 25px
+    min-width: 80px
+
+.table-row
+    margin-bottom: 8px
+
+.selectable-table:hover
+    cursor: pointer
+    &-row
+        padding: 5px
+
+.full-table
+    background-color: white
+    border: solid 2px white
+    border-radius: 5%
+    padding: 1px 10px
+    margin: 3px
+
+.empty-table
+    background-color: $red
+    border: solid 2px white
+    border-radius: 50%
+    padding: 1px 10px
+    margin: 3px
+
+.table-name
+    color: white
+    font-size: .8rem
+    padding-top: 15px
+    font-family: Roboto, sans-serif
+
+//Confirmation screen
+.reservation-details-container
+    padding: 0 4%
+    padding-bottom: 5%
+
+.reservation-details
+    margin: 0 2%
+    margin-bottom: 5%
+
+@media (min-width: $small-break)
+    .reservation-details
+        margin-bottom: 0
+
+.reservation-error
+    color: $red
+    font-size: 1.1rem
+    padding-bottom: 3%
+
+//Thank you page
+.thanks-header
+    padding: 5% 0
+    padding-top: 10%
+    font-size: 2.5rem
+
+.thanks-subset
+    font-size: 1.2rem
+    padding: 2%
+
+.thank-you-pizza
+    font-size: 4rem
+    color: $red
+    padding-bottom: 8%
+
+@media (min-width: $small-break)
+    .thanks-header
+        font-size: 5.5rem
+
+    .thanks-subset
+        font-size: 2.2rem
+
+    .thank-you-pizza
+        font-size: 7rem
+        padding-bottom: 4%
